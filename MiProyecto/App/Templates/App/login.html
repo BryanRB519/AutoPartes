@@ -1,0 +1,75 @@
+{% extends 'App/base.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block codigoDinamico %}
+<br> <br> <br>
+<div class="container text-center">
+    <h2 style="color: #ffcc00; text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4); font-weight: bold;">
+        ¡Bienvenido de nuevo!
+    </h2>
+    <p style="color: #d0d0d0;">Inicia sesión para continuar</p>
+</div>
+
+<div class="container form-container" style="max-width: 450px; margin: auto;">
+    <form method="post" style="background-color: #6a0dad; padding: 30px; border-radius: 20px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button type="submit" class="btn" style="width: 100%; background-color: #ff007f; color: white; border: none; padding: 15px; border-radius: 30px; font-weight: bold; font-size: 18px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            Iniciar Sesión
+        </button>
+    </form>
+</div>
+
+<br> <br>
+<div class="container text-center">
+    <p style="font-size: 18px; color: #d0d0d0;">¿No tienes una cuenta? 
+        <a href="{% url 'Registro' %}" style="color: #ff007f; font-weight: bold; text-decoration: underline;">¡Regístrate aquí!</a>
+    </p>
+</div>
+
+<style>
+    body {
+        background-color: #3a003f; /* Fondo violeta oscuro */
+        font-family: 'Arial', sans-serif;
+    }
+
+    .form-container {
+        background: linear-gradient(145deg, #6a0dad, #7a1e8a); /* Fondo degradado en tonos violetas oscuros */
+    }
+
+    .btn {
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #b3004d; /* Botón más oscuro al hacer hover */
+    }
+
+    a:hover {
+        color: #ffcc00; /* Enlace más claro al hacer hover */
+    }
+
+    /* Estilos para los labels e inputs */
+    label {
+        color: #ffffff; /* Color blanco para los labels */
+    }
+
+    input {
+        color: #1a1a1a; /* Color oscuro para los inputs */
+        background-color: #ffffff; /* Fondo blanco para los inputs */
+        border: 1px solid #ccc; /* Bordes suaves */
+        border-radius: 5px; /* Bordes redondeados */
+    }
+
+    input:focus {
+        border-color: #ff007f; /* Color del borde al enfocar */
+        box-shadow: 0 0 5px rgba(255, 0, 127, 0.5); /* Sombra al enfocar */
+    }
+</style>
+{% endblock %}

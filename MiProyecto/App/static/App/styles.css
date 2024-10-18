@@ -1,0 +1,120 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+.banner {
+    text-align: center;
+    background: linear-gradient(90deg, #35014d 0%, #6e28b5 100%);
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.testimonio {
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+    background-color: #0086c4;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.oferta {
+    text-align: center;
+    font-weight: bold;
+    background-color: #1d0238;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.como-funciona h2 {
+    font-weight: bold;
+    color: #ffff;
+}
+
+.paso {
+    padding: 20px;
+    background-color: #370059;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.paso h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+
+}
+
+.paso p {
+    font-size: 1.1em;
+}
+
+.paso:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border: none;
+}
+
+.bg-primary {
+    background-color: #9c0ad6 !important;
+}
+
+
+.bg-success {
+    background-color: #6328a7 !important;
+}
+
+.bg-danger {
+    background-color: #c935dc !important;
+}
+
+footer {
+    background: linear-gradient(90deg, #a704f3 0%, #ad02d8 100%);
+    color: white;
+    padding: 20px 0;
+}
+
+
+footer h5 {
+    font-size: 16px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
